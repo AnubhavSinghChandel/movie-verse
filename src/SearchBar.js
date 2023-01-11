@@ -1,15 +1,25 @@
 import React from "react"
-import SearchIcon from './search-icon.svg';
+import { GoSearch } from 'react-icons/go';
+import { useState } from "react";
 
 const SearchBar = () => {
+    const [search, setSearch] = useState('');
+    keyPress = (e) => {
+        if (e.key === 'Enter') {
+            setSearch(e.target.value);
+        }
+    }
     return (
         <div className="search">
             <input type="text"
                 placeholder="Search for a Movie"
-                value='Wall-E'
-                onChange={() => { }}
+                value={search}
+                onChange={(e) => {
+                    setSearch(e.target.value);
+                }}
+                onKeyDown={keyPress}
             />
-            <img src={SearchIcon} alt="search" />
+            <GoSearch onClick={() => { searc }} />
         </div>
     );
 }
