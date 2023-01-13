@@ -4,7 +4,7 @@ import { GoSearch } from 'react-icons/go';
 import MovieCard from './MovieCard';
 // import SearchIcon from './search-icon.svg';
 
-// cb7e2fb4
+// cb7e2fb4 is the API key from OMDB
 
 const API_URL = 'http://www.omdbapi.com/?apikey=cb7e2fb4';
 
