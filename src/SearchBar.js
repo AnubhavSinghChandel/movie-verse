@@ -19,7 +19,7 @@ const SearchBar = () => {
                 }}
                 onKeyDown={keyPress}
             />
-            <GoSearch onClick={() => { searc }} />
+            <GoSearch onClick={() => { search }} />
         </div>
     );
 }
